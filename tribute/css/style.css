@@ -1,0 +1,52 @@
+#main{
+  width: 90%;
+  margin: 30px auto 30px auto;
+  background-color: lightgrey;
+  padding: 15px 15px 15px 15px;
+  border-radius: 20px;
+  box-shadow: 12px 12px 12px darkgrey;
+}
+
+#title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 3vw;
+  background-color: grey;
+  border-radius: 20px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+#img-caption {
+  font-weight: bolder;
+}
+
+ul{
+  text-align: left;
+  list-style-type: square;
+}
+
+#tribute-info{
+  width: 65%;
+  text-align: justify;
+}
+
+p{
+  text-indent: 2%;
+}
