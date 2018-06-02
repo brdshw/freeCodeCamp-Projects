@@ -1,1 +1,122 @@
-p{}
+/* Set Fonts */
+
+#title {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#description #survey-form {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 35%;
+}
+#identify_ag{
+  border-width: 0px;
+}
+.section{
+  margin-bottom: 25px;
+}
+@media(max-width: 480px) {
+  #description{
+    text-align: justify;
+  }
+  body {
+    background-color: lightgrey;
+  }
+
+  .section1{
+    display: grid;
+    grid-template-columns: 75px auto;
+    grid-row-gap: 5px;
+  }
+
+.gender_checkboxes{
+
+
+  display:grid;
+  grid-template-columns: 20px auto;
+  grid-gap: 5px;
+}
+
+.section4{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: auto auto;
+}
+
+}
+
+@media(min-width:481px) and (max-width:1024px) {
+  body {
+    background-color: orange;
+  }
+}
+
+@media(min-width:1025px) {
+  body {
+    background-color: pink;
+  }
+}
+
+
+/* #survey-form {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* .section1{
+  display:grid;
+  grid-template-columns: 150px auto;
+  grid-gap: 5px;
+  margin-bottom: 25px;
+}
+
+.section1 input{
+  max-width: 250px;
+}
+.section1 select{
+  max-width: 255px;
+}
+
+.section2{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: repeat(2,auto);
+  margin-bottom: 25px;
+}
+
+.section2 input{
+  margin-left: 10px;
+}
+#identify_wg_yes{
+  margin-left: 0px;
+}
+
+.section3{
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+} */
+
+/* .gender_checkboxes{
+  display: grid;
+  grid-template-columns: repeat(4,20px auto);
+  grid-gap: 5px;
+
+} */
+
+/* #content{
+  background-color: lightgrey;
+  border-radius: 15px;
+  margin: 25px;
+} */

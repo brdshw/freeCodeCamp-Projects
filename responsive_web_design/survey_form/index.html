@@ -1,38 +1,110 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Gender Identity</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Gender Identity</title>
 
-  
-</head>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu|Lato" rel="stylesheet">
 
-<body>
+  </head>
 
-  <h1 id="title">Self-reporting of Gender Identity</h1>
-<p id="description">The purpose of the survey, is to collect information on how the participents identify on the gender spectrum in relation to their assigned gender at birth.</p>
-<br>
-<form id="survey-form">
-  <label for="name" id="name-label">Name:</label>
-  <input type="text" id="name" placeholder="Please enter your name" required>
-  <label for="email" id="email-label">Email:</label>
-  <input type="email" id="email" placeholder="Please enter your email" required>
-  <label id="number-label" for="number">Number of Siblings</label><input type="number" id="number" placeholder="Number of siblings?" min="0" max="10">
+  <body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Transgender_Pride_flag.svg/1280px-Transgender_Pride_flag.svg.png" title="Transgender Pride Flag" alt="Transgender Pride Flag">
 
-  <label for="assigned-gender" id="assigned-gender-label">Gender Assigned at Birth?</label><select name="assigned-gender" id="dropdown"><option>Male</option>
-  <option>Female</option>
-  <option>Intersex</option>
+    <div id="content">
+      <h1 id="title">Self-reporting of Gender Identity</h1>
+      <p id="description">The purpose of the survey, is to collect information on how the participents identify on the gender spectrum in relation to their assigned gender at birth.</p>
+      <br>
+      <form id="survey-form">
+        <div class="section section1">
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" required="required">
+          <label for="email" id="email-label">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email" required="required">
+          <label id="number-label" for="number">Age:</label><input type="number" id="number" placeholder="Enter your age" min="0" max="120">
+          <label for="dropdown" id="assigned-gender-label">Gender Assigned at Birth?</label>
+          <select name="assigned-gender" id="dropdown">
+            <option>Assigned Female at Birth (AFAB)</option>
+            <option>Assigned Male at Birth (AMAB)</option>
+            <option>Intersex</option>
+          </select>
+        </div>
 
-</form>
-  <script src='https://cdn.rawgit.com/freeCodeCamp/testable-projects-fcc/a8c73bc53149aec717b08b9c14f2273eecd31c39/build/bundle.js'></script>
+        <fieldset class="section section2" id="identify_ag">
+          <legend>
+            Do you identify with your gender that was assigned at birth?</legend>
+          <div id="section2_radio">
+            <input id="identify_wg_yes" name="identify_ag" type="radio" value="yes">
+            <label for="identify_wg_yes">Yes</label>
+            <input id="identify_wg_no" name="identify_ag" type="radio" value="no">
+            <label for="identify_wg_no">No</label>
+            <input id="identify_wg_maybe" name="identify_ag" type="radio" value="maybe">
+            <label for="identify_wg_maybe">Maybe</label>
+          </div>
+        </fieldset>
+        <fieldset class="section section3">
+          <legend>Genders you most closely identify with</legend>
+          <div class="gender_checkboxes">
+            <input id="cisgender_female" type="checkbox" value="cisgender_female">
+            <label for="cisgender_female">Cisgender Female</label>
 
-  
+            <input id="cisgender_male" type="checkbox" value="cisgender_male">
+            <label for="cisgender_male">Cisgender Male</label>
 
-</body>
+            <input id="transgender_mtf" type="checkbox" value="transgender_mtf">
+            <label for="transgender_mtf">Transgender Female (MtF)</label>
+
+            <input id="transgender_ftm" type="checkbox" value="transgender_ftm">
+            <label for="transgender_ftm">Transgender Male (FtM)</label>
+
+            <input id="transsexual_mtf" type="checkbox" value="transsexual_mtf">
+            <label for="transsexual_mtf">Transsexual Female (MtF)</label>
+
+            <input id="transsexual_ftm" type="checkbox" value="transsexual_ftm">
+            <label for="transsexual_ftm">Transsexual Male (FtM)</label>
+
+            <input id="agender" type="checkbox" value="agender">
+            <label for="agender">Agender (genderless)</label>
+
+            <input id="androgyne" type="checkbox" value="androgyne">
+            <label for="androgyne">Androgyne</label>
+
+            <input id="bigender" type="checkbox" value="bigender">
+            <label for="bigender">Bigender</label>
+
+            <input id="gender_queer" type="checkbox" value="gender_queer">
+            <label for="gender_queer">Genderqueer / Non-Binary / Gender Fluid</label>
+
+            <input id="gender_bender" type="checkbox" value="gender_bender">
+            <label for="gender_bender">Gender Bender</label>
+
+            <input id="hijra" type="checkbox" value="hijra">
+            <label for="hijra">Hijra</label>
+
+            <input id="pangender" type="checkbox" value="pangender">
+            <label for="pangender">Pangender</label>
+
+            <input id="third_gender" type="checkbox" value="third_gender">
+            <label for="third_gender">Third Gender</label>
+
+            <input id="other_gender" type="checkbox" value="other_gender">
+            <label for="other_gender">Other</label>
+
+          </div>
+        </fieldset>
+        <div class="section section4">
+          <label for="comments">Additional Comments</label>
+          <textarea id="comments">Feel free to add any additional comments.</textarea>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- <script src='https://cdn.rawgit.com/freeCodeCamp/testable-projects-fcc/a8c73bc53149aec717b08b9c14f2273eecd31c39/build/bundle.js'></script> -->
+
+  </body>
 
 </html>
