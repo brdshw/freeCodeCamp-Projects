@@ -16,46 +16,89 @@ img {
   margin-right: auto;
   max-width: 35%;
 }
-#identify_ag{
+#identify_ag {
   border-width: 0px;
+  margin-left: -12px;
 }
-.section{
+
+.section {
   margin-bottom: 25px;
 }
-@media(max-width: 480px) {
-  #description{
+
+@media(max-width: 640px) {
+  #description {
     text-align: justify;
   }
   body {
     background-color: lightgrey;
   }
-
-  .section1{
+  .section1 {
     display: grid;
     grid-template-columns: 75px auto;
     grid-row-gap: 5px;
   }
-
-.gender_checkboxes{
-
-
-  display:grid;
-  grid-template-columns: 20px auto;
-  grid-gap: 5px;
-}
-
-.section4{
-  display: grid;
-  grid-gap: 5px;
-  grid-template-rows: auto auto;
-}
-
-}
-
-@media(min-width:481px) and (max-width:1024px) {
-  body {
-    background-color: orange;
+  .gender_checkboxes {
+    display: grid;
+    grid-template-columns: 20px auto;
+    grid-gap: 5px;
   }
+  .section4 {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: auto auto;
+  }
+}
+
+@media(min-width:641px) {
+  #content {
+    width: 600px;
+    background-color: lightgrey;
+    margin: 25px auto 25px auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #888888;
+  }
+  #description {
+    text-align: justify;
+  }
+  body {
+    background-color: white;
+  }
+  .section1 {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-row-gap: 5px;
+  }
+  .section1 input {
+    width: 218px;
+  }
+  .section1 select {
+    width: 220px;
+  }
+  .gender_checkboxes {
+    display: grid;
+    grid-template-columns: 20px auto 20px auto;
+    grid-gap: 5px;
+  }
+  textarea {
+    width: 80%;
+    height: 100px;
+  }
+  button {
+    height: 40px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section4 {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: auto auto;
+  }
+}
+
 }
 
 @media(min-width:1025px) {
@@ -63,7 +106,6 @@ img {
     background-color: pink;
   }
 }
-
 
 /* #survey-form {
   max-width: 75%;
